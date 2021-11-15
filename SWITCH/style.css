@@ -1,0 +1,18 @@
+body{
+    background-color: darkgray;
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+button#punto{
+    font-size: 60px;
+}
