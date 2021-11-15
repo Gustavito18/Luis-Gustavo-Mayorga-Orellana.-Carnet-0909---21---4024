@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSPORTE DE PAQUETERIA</title>
+    <link rel="stylesheet" href="estilo.css"> <!--enlace para la pestaña de diseño-->
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICIO DE TRANSPORTE P&P</title>
+</head>
+<body>
+<h1> Transportes De Paqueteria P&P 
+    _____________________________________________</h1> <!--titulo principal con un adorno-->
+<p>Que mercaderia desea enviar:</p> <!--etiqueda <p> que es para un parrafo -->
+
+<h3>1-Documentos </h3>  <!--esta etiqueta es como un tecer subtitulo en el cual identifico que mercaderia desea enviar-->
+<h3>2- Paqueteria</h3> 
+<h3>3- Mobiliario</h3> 
+<h3>4- Repuestos</h3> 
+<h3>5- art. Electrónicos</h3> 
+
+<form action=""> <!--creacion de un formulario-->
+    <input id="myInput" type="text"> <br>  <br> <!--espacio donde ingresara la opción para realizar la condicion -->
+    
+    <br>
+    <p>Cual es el largo de su paquete</p> <!--etiqueta <p> nuevamente el cual indica el largo,alto y ancho del paquete-->
+    <input id="largo-paquete" type="text"> <!--su boton -->
+    <p>Cual es el alto de su paquete</p>
+    <input id="alto-paquete" type="text">
+    <p>Cual es el ancho de su paquete</p>
+    <input id="ancho-paquete" type="text">
+    <br>
+    <P> <b>Departamento</b> </P> <!--etiqueta <p> que pide el departamento que desea enviar el paquete-->
+              <h3>  1- Guatemala <br>(Distancia de: 10)</h3> <!--opciones de lugares para enviar el paquete-->
+              <h3>  2- Izabal  <br> (Distancia de: 300)</h3> 
+              <h3>  3- Peten <br> (Distancia de: 460)</h3> 
+              <h3> 4- Chiquimula <br> (Distancia de: 178)</h3> 
+              <h3> 5- Retalhuleu <br> (Distancia de: 200)</h3> 
+    <input id="Departamento" type="text">  
+    <input type="button" value="seleccion" onclick="myFunction()" id="Dep-seleccion"></input> <!--boton para ingresar a la opción seleccionada-->
+     <br><br>
+    <p id="demo"></p>
+  </form>
+  
+  <script>  
+
+    function myFunction() { 
+ 
+      var ingresar = document.getElementById("myInput").value;
+    
+      switch(ingresar) { //nuestra switch que nos permite elegir un caso con su proceso 
+        case "1": //los caso que estan dentro de el switch
+            var kim1=document.getElementById("largo-paquete").value;
+            var peso1=document.getElementById("alto-paquete").value;
+            var peso2=document.getElementById("ancho-paquete").value;
+            var kim2=document.getElementById("Departamento").value;
+
+                 var tarifa=(40); //la tarifa fija del traslado de documentos
+                alert("Su costo sera de: " +tarifa);  //mostrar al usuario el costo
+        break; //etiqueta para darle final al caso que se esta realizando
+        case "2":
+        var kim1=document.getElementById("largo-paquete").value;
+            var peso1=document.getElementById("alto-paquete").value;
+            var peso2=document.getElementById("ancho-paquete").value;
+            var kim2=document.getElementById("Departamento").value;
+
+                 var tarifa=(kim1*peso1*peso2/2272)+(kim2*0.13);
+                alert("Su costo sera de: " +tarifa); 
+        break;
+        case "3":
+        var kim1=document.getElementById("largo-paquete").value;
+            var peso1=document.getElementById("alto-paquete").value;
+            var peso2=document.getElementById("ancho-paquete").value;
+            var kim2=document.getElementById("Departamento").value;
+
+                 var tarifa=(kim1*peso1*peso2/2272)+(kim2*0.13);
+                alert("Su costo sera de: " +tarifa);
+        break;
+        case "4":
+        var kim1=document.getElementById("largo-paquete").value;
+            var peso1=document.getElementById("alto-paquete").value;
+            var peso2=document.getElementById("ancho-paquete").value;
+            var kim2=document.getElementById("Departamento").value;
+
+                 var tarifa=(kim1*peso1*peso2/2272)+(kim2*0.13);
+                alert("Su costo sera de: " +tarifa);
+        break;
+        case "5":
+        var kim1=document.getElementById("largo-paquete").value;
+            var peso1=document.getElementById("alto-paquete").value;
+            var peso2=document.getElementById("ancho-paquete").value;
+            var kim2=document.getElementById("Departamento").value;
+
+                 var tarifa=(kim1*peso1*peso2/2272)+(kim2*0.13);
+                alert("Su costo sera de: " +tarifa);
+        break;
+    
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
